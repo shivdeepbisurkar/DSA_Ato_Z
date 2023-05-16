@@ -40,3 +40,21 @@ class Solution{
         return cnt;
     }
 }
+
+/* Below code is to solve above problem in O(1) time complexity.
+Count digit:    Time complexity= O(1)     Space Complexity=O(1)
+
+static int count_digits(int n) 
+{
+	 String n2 = Integer.toString(n); 
+	return n2.length(); //length() is inbuild function which is used to count length of string
+} 
+
+OR 
+
+Time complexity= O(1)     Space Complexity=O(1)
+static int count_digits(int n) 
+{ 
+	int digits = (int) Math.floor(Math.log10(n) + 1);   
+	 return digits; 
+} */
